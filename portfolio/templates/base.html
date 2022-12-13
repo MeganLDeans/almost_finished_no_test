@@ -8,3 +8,18 @@
 
 </body>
 </html>
+
+<html>
+<head>
+<title>Django Portfolio</title>
+</head>
+<body>
+<header>
+<h1><a href="{% url 'home' %}">Django Portfolio</a></h1>
+</header>
+<div>
+{% block content %}
+{% endblock content %}
+</div>
+</body>
+</html>
