@@ -4,12 +4,12 @@ body {
     font-size: 18px;
 }
 header {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #185930;
     margin-bottom: 2rem;
     display: flex;
 }
 header h1 a {
-    color: red;
+    color: #f03811;
     text-decoration: none;
 }
 .nav-left {
@@ -27,7 +27,7 @@ margin-bottom: 2rem;
 }
 .post-entry h2 a,
 .post-entry h2 a:visited {
-    color: blue;
+    color: purple;
     text-decoration: none;
 }
 .post-entry p {
@@ -35,5 +35,5 @@ margin-bottom: 2rem;
     font-weight: 400;
 }
 .post-entry h2 a:hover{
-    color: red;
+    color: deeppink;
 }

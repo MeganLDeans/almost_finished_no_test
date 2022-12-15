@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="post-entry">
+<h2>{{ portfolio.caption}}</h2>
+        <h3>Succesfully uploaded : {{portfolio.caption}}</h3>
+        <img src="{{ portfolio.image.url}}" alt="connect" style="max-height:300px">
+</div>
+    <a href="{% url 'portfolio_edit' portfolio.pk %}">+ Edit Portfolio entry</a>
+    <p><a href="{% url 'portfolio_delete' portfolio.pk %}">+ Delete Portfolio entry</a></p>
+{% endblock content %}
+
+
