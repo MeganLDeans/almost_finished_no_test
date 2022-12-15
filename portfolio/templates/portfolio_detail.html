@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Caption</title>
 </head>
 <body>
 
 </body>
 </html>
+
+{% extends "base.html" %}
+{% block content %}
+<div class="portfolio-entry">
+<h2>{{ portfolio.caption }}</h2>
+</div>
+{% endblock content %}

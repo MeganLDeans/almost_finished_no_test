@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Caption</title>
 </head>
 <body>
 
 </body>
 </html>
-% extends "base.html" %}
+
+{% extends "base.html" %}
+
 {% block content %}
-{% for post in post_list %}
-<div class="portfolio-entry">
-<h2><a href="">{{ portfolio.caption }}</a></h2>
-<p>{{ portfolio.body }}</p>
+{% for portfolio in portfolio_list %}
+    <div class="portfolio-entry">
+        <h2><a href="">{{ portfolio.caption }}</a></h2>
 </div>
 {% endfor %}
 {% endblock content %}
