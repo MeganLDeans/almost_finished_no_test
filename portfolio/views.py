@@ -34,15 +34,16 @@ class PortfolioCreateView(CreateView):
     model = Portfolio
     template_name = "portfolio_new.html"
     fields = '__all__'
+    success_url = reverse_lazy("portfolio_home")
 
 
 class PortfolioUpdateView(UpdateView):
     model = Portfolio
     template_name = "portfolio_edit.html"
     fields = '__all__'
-
+    success_url = reverse_lazy("portfolio_home")
 
 class PortfolioDeleteView(DeleteView):
     model = Portfolio
     template_name = "portfolio_delete.html"
-    success_url = reverse_lazy("home")
+    success_url = reverse_lazy("portfolio_home")

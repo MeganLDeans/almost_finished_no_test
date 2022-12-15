@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Edit Portfolio entry</h1>
-<form action="" method="post">{% csrf_token %}
-{{ form.as_p }}
-<input type="submit" value="Update">
 </form>
+     <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if img_obj %}
+        <h3> Succesfully uploaded : {{portfolio.caption}}</h3>
+        <img src="{{ portfolio.image.url}}" alt="connect" style="max-height:300px">
+    {% endif %}
 {% endblock content %}
